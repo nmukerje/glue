@@ -41,6 +41,19 @@ Redshift script location [https://github.com/nmukerje/glue/blob/master/scripts/r
  
 Use SQLWorkbench/J to execute the above script in Redshift. Redshift JDBC driver is here:[http://docs.aws.amazon.com/redshift/latest/mgmt/configure-jdbc-connection.html]
 ```
+### Steps
+
+* Create Database connections to the MySQL Database. 
+```
+* Connection name : demo-mysql
+* Connection type : JDBC
+* JDBC URL : jdbc:mysql://<mysqldb-host>:3306/<database-name>
+* Username : <database username>
+* Password : <database password>
+* VPC : <select VPC>
+* Subnet : <select Subnet>
+* Security Group : <select Security Group>
+```
 
 #### GlueNotebook2-MySQL2Redshift.json : Demonstrates a MySQL to Redshift load
 
