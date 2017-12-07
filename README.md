@@ -3,7 +3,7 @@
 #### Pre-Requisites
 
 * Setting up IAM Permissions for AWS Glue [1]
-        3 Managed Policies: AWSGlueConsoleFullAccess, AWSGlueServiceNotebookRole, AWSGlueServiceRole 
+  * 3 Managed Policies: AWSGlueConsoleFullAccess, AWSGlueServiceNotebookRole, AWSGlueServiceRole 
 * Run Crawler on S3 location "s3://neilawspublic/dataset228" to create the source database and table 
 
 #### GlueNotebook1-ParquetConversion.json : Demonstrates Parquet Conversion of a CSV Dataset in S3 partitioned by columns
