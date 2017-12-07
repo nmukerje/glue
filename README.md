@@ -33,6 +33,15 @@ MySQL Script Location: https://github.com/nmukerje/glue/blob/master/scripts/sale
 $> mysql -f -u mysqldb -h <mysqldb-host>.rds.amazonaws.com  -p mysqldb < salesdb.sql
 ```
 
+#### Redshift 
+* Launch a Redshift instance in the same VPC.
+* Create the Schema objects 
+```
+Redshift script location [https://github.com/nmukerje/glue/blob/master/scripts/redshift-schema.sql]
+ 
+Use SQLWorkbench/J to execute the above script in Redshift. Redshift JDBC driver is here:[http://docs.aws.amazon.com/redshift/latest/mgmt/configure-jdbc-connection.html]
+```
+
 #### GlueNotebook2-MySQL2Redshift.json : Demonstrates a MySQL to Redshift load
 
 * Uses Glue DynamicFrames
