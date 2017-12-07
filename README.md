@@ -54,6 +54,50 @@ Use SQLWorkbench/J to execute the above script in Redshift. Redshift JDBC driver
 * Subnet : <select Subnet>
 * Security Group : <select Security Group>
 ```
+* Create Database connections to the Redshift Database. 
+```
+* Connection name : demo-redshift
+* Connection type : JDBC
+* JDBC URL : jdbc:redshift://<redshift-host>:5439/<database-name>
+* Username : <database username>
+* Password : <database password>
+* VPC : <select VPC>
+* Subnet : <select Subnet>
+* Security Group : <select Security Group>
+```
+* Create Crawler to the MySQL Database. 
+```
+* Crawler name : demo-mysql
+* IAM role : <Glue Default Role>
+* Data store : JDBC
+* Connection : demo-mysql
+* Include path : salesdb/%
+* Frequency : Run on demand
+* Database : Add Database -> demo-mysql
+```
+* Create Crawler to the Redshift Database
+```
+* Crawler name : demo-mysql
+* IAM role : <Glue Default Role>
+* Data store : JDBC
+* Connection : demo-mysql
+* Include path : salesdb/%
+* Frequency : Run on demand
+* Database : Add Database -> demo-mysql
+```
+* Create Crawler to the Redshift Database. 
+```
+* Crawler name : demo-redshift
+* IAM role : <Glue Default Role>
+* Data store : JDBC
+* Connection : demo-redshift
+* Include path : redshiftdb/public/%
+* Frequency : Run on demand
+* Database : Add Database -> demo-redshift
+```
+* Run Crawlers on the MySQL and Redshift Databases.
+* Crawlers should create 7 tables for MySQL and 5 tables for Redshift in the respective databases. 
+* Open the Zeppelin notebooks below:
 
 #### GlueNotebook2-MySQL2Redshift.json : Demonstrates a MySQL to Redshift load
 
