@@ -1,12 +1,12 @@
-### ETL : Parquet Conversion
+## ETL : Parquet Conversion
 
-#### Pre-Requisites
+### Pre-Requisites
 
 * Setting up IAM Permissions for AWS Glue [[1]](http://docs.aws.amazon.com/glue/latest/dg/getting-started-access.html)
   * 3 Managed Policies: AWSGlueConsoleFullAccess, AWSGlueServiceNotebookRole, AWSGlueServiceRole 
 * Run Crawler on S3 location "s3://neilawspublic/dataset228" to create the source database and table 
 
-#### Steps
+### Steps
 
 * Open Zeppelin notebook and import notebook 'GlueNotebook1-ParquetConversion.json'
 
@@ -17,12 +17,21 @@
 * Parses CSV files by File header
 * Repartitions output Parquet data by chosen columns
 
-### ETL : MySQL to Redshift 
+## ETL : MySQL to Redshift 
 
-#### Pre-Requisites 
+### Pre-Requisites 
 
 * Install MySQL Workbench [[2]](https://dev.mysql.com/downloads/) and SQL WorkBench/J [[3]](http://www.sql-workbench.net/downloads.html). 
 * Create a S3 VPC Endpoint. [[4]](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html) 
+
+#### MySQL 
+
+* Launch a MySQL RDS instance.
+* Connect to it and create the schema objects and load the data into the MySQL database. 
+```
+MySQL Script Location: https://github.com/nmukerje/glue/blob/master/scripts/salesdb.sql
+$> mysql -f -u mysqldb -h <mysqldb-host>.rds.amazonaws.com  -p mysqldb < salesdb.sql
+```
 
 #### GlueNotebook2-MySQL2Redshift.json : Demonstrates a MySQL to Redshift load
 
