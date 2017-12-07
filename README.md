@@ -6,6 +6,10 @@
   * 3 Managed Policies: AWSGlueConsoleFullAccess, AWSGlueServiceNotebookRole, AWSGlueServiceRole 
 * Run Crawler on S3 location "s3://neilawspublic/dataset228" to create the source database and table 
 
+#### Steps
+
+* Open Zeppelin notebook and import notebook 'GlueNotebook1-ParquetConversion.json'
+
 #### GlueNotebook1-ParquetConversion.json : Demonstrates Parquet Conversion of a CSV Dataset in S3 partitioned by columns
 
 * Uses Spark Dataframes
