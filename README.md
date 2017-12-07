@@ -21,8 +21,8 @@
 
 #### Pre-Requisites 
 
-* Install MySQL Workbench[[2]] and SQL WorkBench/J[[3]]. 
-* Create a S3 VPC Endpoint.[[4]] 
+* Install MySQL Workbench [[2]](https://dev.mysql.com/downloads/) and SQL WorkBench/J [[3]](http://www.sql-workbench.net/downloads.html). 
+* Create a S3 VPC Endpoint. [[4]](http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints.html) 
 
 #### GlueNotebook2-MySQL2Redshift.json : Demonstrates a MySQL to Redshift load
 
