@@ -2,7 +2,7 @@
 
 #### Pre-Requisites
 
-* Setting up IAM Permissions for AWS Glue [1]
+* Setting up IAM Permissions for AWS Glue [](http://docs.aws.amazon.com/glue/latest/dg/getting-started-access.html)
   * 3 Managed Policies: AWSGlueConsoleFullAccess, AWSGlueServiceNotebookRole, AWSGlueServiceRole 
 * Run Crawler on S3 location "s3://neilawspublic/dataset228" to create the source database and table 
 
