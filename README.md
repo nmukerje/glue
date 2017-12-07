@@ -21,6 +21,9 @@
 
 #### Pre-Requisites 
 
+* Install MySQL Workbench[[2]] and SQL WorkBench/J[[3]]. 
+* Create a S3 VPC Endpoint.[[4]] 
+
 #### GlueNotebook2-MySQL2Redshift.json : Demonstrates a MySQL to Redshift load
 
 * Uses Glue DynamicFrames
