@@ -1,4 +1,10 @@
-# Glue Zeppelin Notebooks
+### ETL : Parquet Conversion
+
+#### Pre-Requisites
+
+* Setting up IAM Permissions for AWS Glue [1]
+        3 Managed Policies: AWSGlueConsoleFullAccess, AWSGlueServiceNotebookRole, AWSGlueServiceRole 
+* Run Crawler on S3 location "s3://neilawspublic/dataset228" to create the source database and table 
 
 #### GlueNotebook1-ParquetConversion.json : Demonstrates Parquet Conversion of a CSV Dataset in S3 partitioned by columns
 
@@ -6,6 +12,10 @@
 * Uses boto3 to access Glue catalog
 * Parses CSV files by File header
 * Repartitions output Parquet data by chosen columns
+
+### ETL : MySQL to Redshift 
+
+#### Pre-Requisites 
 
 #### GlueNotebook2-MySQL2Redshift.json : Demonstrates a MySQL to Redshift load
 
