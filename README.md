@@ -18,4 +18,10 @@
 * Uses external checkpointing to DynamoDB
 * Uses Spark SQL for transforms and computed columns
 * Uses Spark Redshift package for inserting data to Redshift
-* Vaccuums Redshift table as a post load statement
+* Vacuums Redshift table as a post load statement
+
+#### GlueNotebook5-Redshift2S3.json : Demonstrates a Redshift to S3 unload
+
+* Uses Spark Redshift package UNLOAD from Redshift 
+* Writes data to parquet in S3 partitioned by chosen columns
+
