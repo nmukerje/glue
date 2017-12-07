@@ -24,4 +24,3 @@
 
 * Uses Spark Redshift package UNLOAD from Redshift 
 * Writes data to parquet in S3 partitioned by chosen columns
-
